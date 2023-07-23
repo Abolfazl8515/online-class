@@ -8,6 +8,14 @@
 }
 
 video {
-  width: 400px;
+  width: 70%;
   height: 100px;
+  display: flex;
+}
+
+textarea {
+  width: 70%;
+  height: 400px;
+  margin-top: 20px;
+  padding: 10px;
 }

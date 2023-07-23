@@ -3,6 +3,7 @@ import "./App.css";
 
 function App() {
   const videoEl = useRef();
+  const videoEl2 = useRef();
   function openCam() {
     let All_mediaDevices = navigator.mediaDevices;
     if (!All_mediaDevices || !All_mediaDevices.getUserMedia) {
@@ -30,8 +31,13 @@ function App() {
   }
   return (
     <div className="App">
-      <video ref={videoEl}></video>
+      <div>
+        <video ref={videoEl}></video>
+        <video ref={videoEl2}></video>
+      </div>
       <button onClick={openCam}>open camera</button>
+      <button onClick={openCam}>open camera2</button>
+      <textarea placeholder="type something..."></textarea>
     </div>
   );
 }
